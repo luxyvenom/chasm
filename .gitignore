@@ -1,0 +1,13 @@
+node_modules
+.next
+dist
+bin
+.turbo
+.vercel
+.env
+.env.local
+.env.*.local
+coverage
+tmp
+*.log
+apps/api/.air.toml
