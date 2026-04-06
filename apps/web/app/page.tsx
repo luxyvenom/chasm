@@ -6,22 +6,23 @@ import { Pill, Section } from '@/components/ui/shell'
 
 export default function HomePage() {
   return (
-    <main className="pb-16">
+    <main className="pb-20">
       <Section className="pt-6">
-        <nav className="flex items-center justify-between rounded-full border border-white/10 bg-white/5 px-5 py-4 backdrop-blur">
-          <Link href="/" className="display-font text-xl font-semibold tracking-[-0.04em]">
+        <nav className="flex items-center justify-between rounded-full border border-[var(--border)] bg-white/70 px-5 py-4 shadow-[0_18px_50px_rgba(255,111,181,0.12)] backdrop-blur">
+          <Link href="/" className="display-font text-xl font-semibold tracking-[-0.04em] text-[var(--ink)]">
             CHASM
           </Link>
-          <div className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
+          <div className="hidden items-center gap-6 text-sm font-medium text-[var(--muted)] md:flex">
             <a href="#product">Product</a>
+            <a href="#proof">Proof</a>
             <a href="#pricing">Pricing</a>
             <Link href="/dashboard">Dashboard</Link>
           </div>
           <Link
             href="/onboarding"
-            className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white"
+            className="rounded-full border border-[var(--border-strong)] bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-[var(--ink)] transition hover:bg-[var(--accent-strong)]"
           >
-            Start
+            Start Free
           </Link>
         </nav>
       </Section>
@@ -30,26 +31,31 @@ export default function HomePage() {
         <ProductSections />
       </div>
       <Section id="pricing" className="pb-10">
-        <div className="rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(52,211,154,0.14),rgba(52,211,154,0.03))] p-8 lg:flex lg:items-end lg:justify-between">
+        <div className="grid gap-6 rounded-[2.25rem] border border-[var(--border)] bg-[linear-gradient(135deg,rgba(255,244,184,0.9),rgba(255,214,234,0.9))] p-8 shadow-[0_24px_70px_rgba(255,111,181,0.18)] lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <div className="space-y-4">
             <Pill tone="accent">Pricing</Pill>
-            <h2 className="display-font text-3xl font-semibold tracking-[-0.03em] text-white lg:text-5xl">
-              월 9,900원으로
+            <h2 className="display-font text-3xl font-semibold tracking-[-0.03em] text-[var(--ink)] lg:text-5xl">
+              작은 팀도 바로 시작할 수 있는
               <br />
-              감이 아니라 근거를 남깁니다.
+              캐릭터 IP 성장 워크스페이스
             </h2>
-            <p className="max-w-2xl text-sm leading-7 text-slate-300">
-              검색 트렌드, 유사 캐릭터 랭킹, AI 액션 추천, 일본 잠재력 지표를 한
-              곳에서 확인하고 다음 수익화 우선순위를 빠르게 결정합니다.
+            <p className="max-w-2xl text-sm leading-7 text-[var(--muted)]">
+              검색어 조사, 경쟁 크리에이터 비교, 일본 확장 체크, 다음 액션 추천까지 한 화면에서
+              정리합니다. 블로그나 감으로 결정하던 일을 데이터 루틴으로 바꾸는 데 초점을 맞췄습니다.
             </p>
           </div>
-          <div className="mt-6 rounded-[1.75rem] border border-white/10 bg-slate-950/50 p-6 lg:mt-0 lg:w-[360px]">
-            <p className="text-sm text-slate-400">MVP Plan</p>
-            <p className="display-font mt-2 text-5xl font-semibold text-white">₩9,900</p>
-            <p className="mt-2 text-sm text-slate-400">VAT 별도 / 월간 구독</p>
+          <div className="rounded-[1.9rem] border border-[var(--border-strong)] bg-white/75 p-6 backdrop-blur">
+            <p className="text-sm font-medium text-[var(--muted)]">MVP Plan</p>
+            <p className="display-font mt-2 text-5xl font-semibold text-[var(--ink)]">₩9,900</p>
+            <p className="mt-2 text-sm text-[var(--muted)]">VAT 별도 / 월간 구독</p>
+            <div className="mt-6 space-y-2 text-sm text-[var(--ink-soft)]">
+              <p>주간 키워드 스냅샷</p>
+              <p>유사 크리에이터 벤치마크</p>
+              <p>상품화 액션 가이드</p>
+            </div>
             <Link
               href="/onboarding"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-slate-950"
+              className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-[var(--ink)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[var(--ink-soft)]"
             >
               온보딩 시작
             </Link>

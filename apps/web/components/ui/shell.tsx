@@ -27,10 +27,10 @@ export function Pill({
   return (
     <span
       className={cn(
-        'inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium tracking-[0.14em] uppercase',
+        'inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold tracking-[0.14em] uppercase',
         tone === 'accent'
-          ? 'border-emerald-300/30 bg-emerald-300/10 text-emerald-100'
-          : 'border-white/10 bg-white/5 text-slate-200',
+          ? 'border-[var(--border-strong)] bg-[rgba(255,255,255,0.64)] text-[var(--ink)]'
+          : 'border-[var(--border)] bg-white/60 text-[var(--ink-soft)]',
       )}
     >
       {children}
@@ -48,7 +48,7 @@ export function PrimaryButton({
   return (
     <Link
       href={href}
-      className="inline-flex items-center justify-center rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-[var(--accent-strong)]"
+      className="inline-flex items-center justify-center rounded-full bg-[var(--ink)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[var(--ink-soft)]"
     >
       {children}
     </Link>
@@ -65,7 +65,7 @@ export function SecondaryButton({
   return (
     <Link
       href={href}
-      className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+      className="inline-flex items-center justify-center rounded-full border border-[var(--border-strong)] bg-white/55 px-5 py-3 text-sm font-semibold text-[var(--ink)] transition hover:bg-white/80"
     >
       {children}
     </Link>

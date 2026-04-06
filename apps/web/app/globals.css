@@ -1,18 +1,21 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #09111f;
-  --background-2: #0f1b32;
-  --panel: rgba(10, 18, 34, 0.76);
-  --panel-strong: #0d1730;
-  --border: rgba(167, 193, 255, 0.18);
-  --text: #ecf3ff;
-  --muted: #9cb0d1;
-  --accent: #8ff7cc;
-  --accent-strong: #34d39a;
-  --accent-2: #75a7ff;
-  --warning: #ffd86f;
-  --danger: #ff9277;
+  --background: #fffaf2;
+  --background-2: #fff0c9;
+  --panel: rgba(255, 255, 255, 0.72);
+  --panel-strong: #fff7dc;
+  --border: rgba(157, 79, 117, 0.14);
+  --border-strong: rgba(157, 79, 117, 0.24);
+  --text: #352132;
+  --ink: #4c1f3a;
+  --ink-soft: #6c3556;
+  --muted: #7d5e70;
+  --accent: #ffd957;
+  --accent-strong: #ffc83d;
+  --accent-2: #ff8fc4;
+  --accent-2-strong: #ff6fb5;
+  --cream: #fff6dd;
 }
 
 * {
@@ -27,11 +30,25 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(72, 119, 255, 0.28), transparent 34%),
-    radial-gradient(circle at top right, rgba(91, 225, 176, 0.14), transparent 28%),
-    linear-gradient(180deg, var(--background) 0%, #07101b 100%);
+    radial-gradient(circle at top left, rgba(255, 217, 87, 0.55), transparent 24%),
+    radial-gradient(circle at 80% 12%, rgba(255, 143, 196, 0.34), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(255, 216, 154, 0.38), transparent 22%),
+    linear-gradient(180deg, var(--background) 0%, #fffdf7 52%, #ffeef6 100%);
   color: var(--text);
   font-family: var(--font-body), sans-serif;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.26) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.22) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45), transparent 88%);
+  pointer-events: none;
 }
 
 a {
@@ -47,4 +64,9 @@ select {
 
 .display-font {
   font-family: var(--font-display), sans-serif;
+}
+
+.card-surface {
+  background: var(--panel);
+  backdrop-filter: blur(22px);
 }
