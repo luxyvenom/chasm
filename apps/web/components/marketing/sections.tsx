@@ -89,7 +89,7 @@ export function ProductSections() {
               ))}
             </div>
           </div>
-          <div className="rounded-[2.2rem] border border-[var(--border-strong)] bg-[linear-gradient(180deg,rgba(255,239,186,0.92),rgba(255,216,234,0.92))] p-7 shadow-[0_24px_70px_rgba(255,111,181,0.12)]">
+          <div className="rounded-[2.2rem] border border-[var(--border-strong)] bg-[var(--panel-strong)] p-7 shadow-[0_24px_70px_rgba(255,111,181,0.12)]">
             <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">Monetization Loop</p>
             <div className="mt-5 space-y-4">
               {loopItems.map((item, index) => (
@@ -107,7 +107,7 @@ export function ProductSections() {
                 <span className="font-semibold text-[var(--ink)]">23.8x</span>
               </div>
               <div className="mt-3 h-2 rounded-full bg-white/70">
-                <div className="h-2 w-[78%] rounded-full bg-[linear-gradient(90deg,var(--accent-2),var(--accent))]" />
+                <div className="h-2 w-[78%] rounded-full bg-[var(--accent-2)]" />
               </div>
               <a
                 href="/dashboard"

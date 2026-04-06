@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <main className="pb-20">
       <Section className="pt-6">
-        <nav className="flex items-center justify-between rounded-full border border-[var(--border)] bg-white/70 px-5 py-4 shadow-[0_18px_50px_rgba(255,111,181,0.12)] backdrop-blur">
+        <nav className="flex items-center justify-between rounded-full border border-[var(--border)] bg-[var(--panel-strong)] px-5 py-4 shadow-[0_18px_50px_rgba(255,111,181,0.12)] backdrop-blur">
           <Link href="/" className="display-font text-xl font-semibold tracking-[-0.04em] text-[var(--ink)]">
             CHASM
           </Link>
@@ -31,7 +31,7 @@ export default function HomePage() {
         <ProductSections />
       </div>
       <Section id="pricing" className="pb-10">
-        <div className="grid gap-6 rounded-[2.25rem] border border-[var(--border)] bg-[linear-gradient(135deg,rgba(255,244,184,0.9),rgba(255,214,234,0.9))] p-8 shadow-[0_24px_70px_rgba(255,111,181,0.18)] lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+        <div className="grid gap-6 rounded-[2.25rem] border border-[var(--border)] bg-[var(--panel-strong)] p-8 shadow-[0_24px_70px_rgba(255,111,181,0.18)] lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <div className="space-y-4">
             <Pill tone="accent">Pricing</Pill>
             <h2 className="display-font text-3xl font-semibold tracking-[-0.03em] text-[var(--ink)] lg:text-5xl">
@@ -44,7 +44,7 @@ export default function HomePage() {
               정리합니다. 블로그나 감으로 결정하던 일을 데이터 루틴으로 바꾸는 데 초점을 맞췄습니다.
             </p>
           </div>
-          <div className="rounded-[1.9rem] border border-[var(--border-strong)] bg-white/75 p-6 backdrop-blur">
+          <div className="rounded-[1.9rem] border border-[var(--border-strong)] bg-white/85 p-6 backdrop-blur">
             <p className="text-sm font-medium text-[var(--muted)]">MVP Plan</p>
             <p className="display-font mt-2 text-5xl font-semibold text-[var(--ink)]">₩9,900</p>
             <p className="mt-2 text-sm text-[var(--muted)]">VAT 별도 / 월간 구독</p>

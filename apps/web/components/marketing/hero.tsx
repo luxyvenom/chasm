@@ -35,8 +35,8 @@ const statRows = [
 export function Hero() {
   return (
     <Section className="relative overflow-hidden pt-10 pb-20 lg:pt-16 lg:pb-28">
-      <div className="absolute left-[-4rem] top-8 h-36 w-36 rounded-full bg-[rgba(255,217,87,0.45)] blur-3xl" />
-      <div className="absolute right-[-3rem] top-24 h-44 w-44 rounded-full bg-[rgba(255,111,181,0.28)] blur-3xl" />
+      <div className="absolute left-[-4rem] top-8 h-36 w-36 rounded-full bg-[rgba(255,157,201,0.2)] blur-3xl" />
+      <div className="absolute right-[-3rem] top-24 h-44 w-44 rounded-full bg-[rgba(248,78,164,0.16)] blur-3xl" />
       <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div className="space-y-7">
           <Pill tone="accent">Character Market Intelligence SaaS</Pill>
@@ -70,9 +70,9 @@ export function Hero() {
           </div>
         </div>
         <div className="relative">
-          <div className="absolute inset-0 -z-10 rounded-[2.4rem] bg-[radial-gradient(circle_at_top,rgba(255,217,87,0.28),transparent_36%),radial-gradient(circle_at_bottom_right,rgba(255,111,181,0.22),transparent_30%)] blur-2xl" />
+          <div className="absolute inset-0 -z-10 rounded-[2.4rem] bg-[rgba(255,157,201,0.18)] blur-2xl" />
           <div className="card-surface rounded-[2.4rem] border border-[var(--border)] p-5 shadow-[0_30px_80px_rgba(157,79,117,0.14)]">
-            <div className="mb-5 rounded-[1.9rem] border border-[var(--border)] bg-[linear-gradient(135deg,rgba(255,243,205,0.95),rgba(255,225,239,0.92))] p-5">
+            <div className="mb-5 rounded-[1.9rem] border border-[var(--border)] bg-[var(--panel-strong)] p-5">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
@@ -108,7 +108,7 @@ export function Hero() {
                   82
                 </p>
                 <div className="mt-5 h-3 rounded-full bg-white/70">
-                  <div className="h-3 w-[82%] rounded-full bg-[linear-gradient(90deg,var(--accent),var(--accent-2))]" />
+                  <div className="h-3 w-[82%] rounded-full bg-[var(--accent-2)]" />
                 </div>
                 <p className="mt-4 text-sm leading-6 text-[var(--muted)]">
                   핑크 포인트와 옐로우 포장을 같이 쓰는 굿즈군의 반응이 높게 나타났습니다.
